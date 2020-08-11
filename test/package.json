@@ -1,0 +1,20 @@
+{
+  "name": "wasmlinearalgebra-test",
+  "version": "0.0.1",
+  "description": "Testsuite of LinearAlgebra functions in WebAssembly",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest ./testsuite/"
+  },
+  "keywords": [
+    "WebAssembly",
+    "LinearAlgebra"
+  ],
+  "author": "Anders Gustafsson (andersgee@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^26.2.2",
+    "node-fetch": "^2.6.0",
+    "wasm-instantiate-streaming": "^1.0.2"
+  }
+}
