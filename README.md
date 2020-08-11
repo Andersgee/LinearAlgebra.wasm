@@ -1,6 +1,6 @@
 # LinearAlgebra.wasm
 
-Some matrix algebra compiled to WebAssembly. See the example folder for an example website.
+Some matrix algebra compiled to WebAssembly. See the example folder for an example website. There you can also find the actual LinearAlgebra.wasm file.
 
 ## Function reference
 
