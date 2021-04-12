@@ -53,18 +53,18 @@ async function instantiate(path) {
   };
 
   wasm.storeview = (M, size = [M.length, 1]) => {
-    let ptr = store(M, size);
-    let v = view(ptr);
+    let ptr = wasm.store(M, size);
+    let v = wasm.view(ptr);
     return [ptr, v];
   };
   /*
-  mat.copy = (ptr) => {
+  wasm.copy = (ptr) => {
     return wasm.copy(ptr);
-  };
-*/
+  };*/
+
   wasm.copyview = (ptr) => {
     let newptr = wasm.copy(ptr);
-    let v = view(wasm, newptr);
+    let v = wasm.view(newptr);
     return [newptr, v];
   };
 
