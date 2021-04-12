@@ -2,4 +2,4 @@ test/node_modules/
 src/LinearAlgebra.wat
 src/LinearAlgebra.wasm
 src/notebook/
-src/.vscode/
+*.vscode/

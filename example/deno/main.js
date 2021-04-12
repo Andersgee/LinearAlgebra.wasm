@@ -71,7 +71,7 @@ async function instantiate(path) {
   return wasm;
 }
 
-const mat = await instantiate("./LinearAlgebra.wasm");
+const mat = await instantiate("../web/LinearAlgebra.wasm");
 
 let W = mat.store([1, 2, 3, 4, 5, 6], [2, 3]); //2x3 matrix
 let x = mat.store([5, 6, 7], [3, 1]); //3x1 matrix
