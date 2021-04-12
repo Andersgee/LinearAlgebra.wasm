@@ -10,10 +10,10 @@ JavaScript:
 instantiate("LinearAlgebra.wasm").then((mat) => main(mat));
 
 function main(mat) {
-  let w = store([1, 2, 3, 4, 5, 6], [2, 3]); //store(matrix, size)
-  let x = store([1, 2, 3]); //default to vector
+  let W = mat.store([1, 2, 3, 4, 5, 6], [2, 3]); //store(matrix, size)
+  let x = mat.store([1, 2, 3]); //default to vector
 
-  let y = mat.mul(w, x);
+  let y = mat.mul(W, x);
 }
 ```
 
